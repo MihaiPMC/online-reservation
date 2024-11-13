@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const time = document.getElementById('time').value;
 
         if (!name || !date || !time) {
-            alert('Toate câmpurile sunt obligatorii!');
+            alert('All fields are required!');
             return;
         }
 
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         saveReservation(reservation);
 
         form.reset();
-        alert('Rezervarea a fost înregistrată cu succes!');
+        alert('The reservation has been successfully recorded!');
     }
 
     function saveReservation(reservation) {
@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function() {
         localStorage.setItem('reservations', JSON.stringify(reservations));
     }
 });
+
 document.addEventListener('DOMContentLoaded', () => {
     const bookingForm = document.getElementById('bookingForm');
     const reservationsList = document.getElementById('reservationsList');
@@ -48,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const time = document.getElementById('time').value;
 
         if (!name || !date || !time) {
-            alert('Toate câmpurile sunt obligatorii!');
+            alert('All fields are required!');
             return;
         }
 
