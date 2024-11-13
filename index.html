@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Booking Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Online Bookings</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-form">
+            <h2>Make a Booking</h2>
+            <form id="bookingForm" action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required>
+
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+
+        <section class="reservations">
+            <h2>My Reservations</h2>
+            <ul id="reservationsList">
+                <!-- Reservations will be displayed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Online Booking Platform. All rights reserved.</p>
+    </footer>
+</body>
+</html>
